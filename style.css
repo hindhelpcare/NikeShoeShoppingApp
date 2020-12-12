@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+    font-family: "Poppins";
+}
+
+.container-fluid {
+    height: 100vh;
+    background: #fe4c00;
+    background-image: url(assets/nike-orange.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -100px 200px;
+}
+
+div.menu {
+    background: #f54900;
+}
+
+div.menu>span {
+    font-size: 12px;
+    color: #fe9c72;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+div.menu>span.active {
+    color: white;
+}
+
+div.menu>span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+div.logo>img {
+    height: 15px;
+}
+
+div.logo {
+    background: #e24300;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fas.fa-shopping-cart {
+    color: white;
+    font-size: 1.3em;
+}
+
+div.cart-count {
+    font-size: 11px;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #f54900;
+}
+
+div.shoe-list {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.shoe-list>span {
+    padding: 0px 60px;
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #fe9c72;
+    white-space: nowrap;
+}
+
+div.shoe-list>div>span.active {
+    padding: 0px 80px;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+}
+
+div.shoe-list>div>i.fas {
+    color: white;
+    font-size: 1.5em;
+}
+
+div.shoe-list>div>span.active::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 7px;
+    background: white;
+    bottom: -3px;
+}
+
+img.selected-shoe {
+    height: 250px;
+    z-index: 1;
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.75));
+}
+
+div.shoe-container {
+    background: white;
+    padding-bottom: 30px;
+    padding-top: 130px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: -100px;
+}
+
+div.select-size {
+    border: 1px solid #ddcdc6;
+    border-radius: 25px;
+}
+
+i.fas.fa-caret-down {
+    color: #fe4c00;
+}
+
+span.old {
+    color: #fe4c00;
+    text-decoration: line-through;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+span.new {
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+span.new-small {
+    font-size: 14px;
+}
+
+div.shoe-cart {
+    background: #343434;
+    right: -80px;
+    position: relative;
+}
+
+.fas.fa-arrow-down {
+    font-size: 10px;
+    color: white;
+}
